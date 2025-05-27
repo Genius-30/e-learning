@@ -113,9 +113,6 @@ export const Footer = () => {
         <span className="bg-gradient-to-b from-background to-border-color bg-clip-text text-transparent text-[2.5rem] sm:text-[4rem] md:text-[6rem] lg:text-[8rem] xl:text-[9.5rem] font-bold leading-none">
           E-Learning
         </span>
-        <span className="text-gray-500 text-lg tracking-widest">
-          Powered by CodeBit
-        </span>
       </div>
     </footer>
   );

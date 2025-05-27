@@ -89,7 +89,6 @@ export default function Navbar() {
           />
           <div className="hidden lg:flex flex-col">
             <span className="text-lg font-semibold">E-Learning</span>
-            <span className="text-xs text-gray-500">Powered by CodeBit</span>
           </div>
         </div>
 
