@@ -1,4 +1,4 @@
-import Filter from "bad-words";
+import { Filter } from "bad-words";
 import dbConnect from "@/lib/dbConnect";
 import Review from "@/models/review.model";
 import { ErrorResponse, SuccessResponse } from "@/utils/responseUtils";

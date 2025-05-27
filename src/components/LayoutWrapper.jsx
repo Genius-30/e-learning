@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import Navbar from "@/components/navbar";
+import Navbar from "@/components/Navbar";
 import SignupModal from "@/components/auth/Signup";
 import { Footer } from "@/components/other/Footer";
 import AdminNavbar from "@/components/admin/Navbar";
