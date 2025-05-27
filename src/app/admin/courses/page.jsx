@@ -134,7 +134,7 @@ export default function Courses() {
             startContent={<SearchIcon className="h-4 w-4 text-default-400" />}
             className="w-full h-full"
             classNames={{
-              input: "h-full border-none outline-none py-2 px-4",
+              input: "h-full py-2 px-4",
               startContent: "text-default-400",
               mainWrapper: "h-full",
               inputWrapper: "h-full",
@@ -150,9 +150,6 @@ export default function Courses() {
             label="Status"
             size="sm"
             onChange={(e) => setStatus(e.target.value)}
-            classNames={{
-              label: "mb-3",
-            }}
           >
             {statusOptions.map((opt) => (
               <SelectItem key={opt.key}>{opt.label}</SelectItem>
@@ -165,9 +162,6 @@ export default function Courses() {
             label="Sort By"
             size="sm"
             onChange={(e) => setSortBy(e.target.value)}
-            classNames={{
-              label: "mb-3",
-            }}
           >
             {sortOptions.map((opt) => (
               <SelectItem key={opt.key}>{opt.label}</SelectItem>
@@ -180,9 +174,6 @@ export default function Courses() {
             label="Order"
             size="sm"
             onChange={(e) => setOrder(e.target.value)}
-            classNames={{
-              label: "mb-3",
-            }}
           >
             {orderOptions.map((opt) => (
               <SelectItem key={opt.key}>{opt.label}</SelectItem>

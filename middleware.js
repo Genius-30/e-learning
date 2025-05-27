@@ -1,9 +1,6 @@
 import { NextResponse } from "next/server";
 
-const allowedOrigins = [
-  process.env.CLIENT_URL || "http://localhost:3000",
-  "https://8r6t3jcx-3000.inc1.devtunnels.ms",
-];
+const allowedOrigins = [process.env.CLIENT_URL || "http://localhost:3000"];
 
 export function middleware(request) {
   const origin = request.headers.get("origin") ?? "";

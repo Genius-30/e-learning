@@ -185,7 +185,7 @@ export default function ReviewsSection({
             onPress={handleReviewSubmit}
             isDisabled={submitting}
             isLoading={submitting}
-            className="w-full"
+            className=""
             color="primary"
           >
             Submit Review

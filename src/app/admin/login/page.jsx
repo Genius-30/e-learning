@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Input, Button, Spinner, addToast } from "@heroui/react";
+import { Input, Button, addToast } from "@heroui/react";
 import { EyeIcon, EyeOffIcon, UserIcon } from "lucide-react";
 import api from "@/utils/axiosInstance";
 import { useAdminAuth } from "@/context/AdminAuthContext";
@@ -61,7 +61,6 @@ export default function AdminLogin() {
             onChange={(e) => setAdminId(e.target.value)}
             variant="bordered"
             endContent={<UserIcon />}
-            classNames={{ input: "outline-none", label: "mb-4" }}
           />
           <Input
             label="Password"
@@ -75,7 +74,6 @@ export default function AdminLogin() {
                 {showPassword ? <EyeOffIcon /> : <EyeIcon />}
               </button>
             }
-            classNames={{ input: "outline-none", label: "mb-4" }}
           />
           <Button
             className="bg-primary mt-4"
