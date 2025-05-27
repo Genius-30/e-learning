@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import CourseRecommendations from "@/components/home/CourseRecommendationsSection";
 import { useAuth } from "@/context/AuthContext";
 import EnrolledCoursesSection from "@/components/home/EnrolledCoursesSection";

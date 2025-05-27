@@ -56,7 +56,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1 }}
           >
-            Welcome to CyberGrow 🚀
+            Welcome to E-Learning
           </motion.p>
         </motion.div>
       )}

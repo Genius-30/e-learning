@@ -6,7 +6,7 @@ export default function PrivacyPolicyPage() {
       <section className="mb-6">
         <h2 className="text-2xl font-semibold">Introduction</h2>
         <p className="mt-2 text-text/60">
-          Welcome to CyberGrow. We value your privacy and are committed to
+          Welcome to E-Learning. We value your privacy and are committed to
           protecting your personal data. This Privacy Policy outlines how we
           collect, use, and protect your information when you use our website or
           services.
@@ -76,10 +76,8 @@ export default function PrivacyPolicyPage() {
           If you have any questions or concerns about this Privacy Policy or our
           data practices, please contact us at:
         </p>
-        <p className="mt-2 text-text/60">Email: cybergrowsupport@gmail.com</p>
-        <p className="text-text/60">
-          Address: 1st Floor Satyam Palace, New Road, Ratlam (M.P.)
-        </p>
+        <p className="mt-2 text-text/60">Email: e-learningsupport@gmail.com</p>
+        <p className="text-text/60">Address:</p>
       </section>
     </div>
   );

@@ -32,7 +32,7 @@ export default function HelpPage() {
           <li>
             Email:{" "}
             <a
-              href="mailto:cybergrowsupport@gmail.com"
+              href="mailto:e-learningsupport@gmail.com"
               className="text-blue underline"
             >
               cybergrowsupport@gmail.com

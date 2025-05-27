@@ -80,7 +80,7 @@ export default function Navbar() {
         <div className="flex items-center space-x-3">
           <Image
             src="/logo.jpg"
-            alt="CyberGrow Logo"
+            alt="E-Learning Logo"
             width={40}
             height={40}
             priority
@@ -88,7 +88,7 @@ export default function Navbar() {
             className="rounded-full"
           />
           <div className="hidden lg:flex flex-col">
-            <span className="text-lg font-semibold">CyberGrow</span>
+            <span className="text-lg font-semibold">E-Learning</span>
             <span className="text-xs text-gray-500">Powered by CodeBit</span>
           </div>
         </div>

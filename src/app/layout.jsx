@@ -10,8 +10,8 @@ const interFont = Inter({
 });
 
 export const metadata = {
-  title: "CyberGrow E-Learning",
-  description: "An e-learning platform for CyberGrow",
+  title: "E-Learning",
+  description: "An e-learning platform",
   icons: "/logo.jpg",
 };
 

@@ -63,7 +63,7 @@ export default function TermsOfServicePage() {
         <p className="mt-2 text-text/60">
           If you have any questions about these Terms, please contact us at:
           <br />
-          Email: cybergrowsupport@gmail.com
+          Email: e-learningsupport@gmail.com
         </p>
       </section>
     </div>

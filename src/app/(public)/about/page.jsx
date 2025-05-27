@@ -5,18 +5,18 @@ import React from "react";
 export default function AboutPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-16">
-      <h1 className="text-4xl font-bold mb-4">About CyberGrow</h1>
+      <h1 className="text-4xl font-bold mb-4">About E-Learning</h1>
 
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">Our Story</h2>
         <p className="text-text/60">
-          CyberGrow was founded with a passion to revolutionize digital
+          E-Learning was founded with a passion to revolutionize digital
           learning. We started with a simple idea—to make high-quality education
           accessible, engaging, and career-driven. Today, we're building one of
           India's most impactful e-learning platforms.
         </p>
       </section>
-    
+
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">Our Mission</h2>
         <p className="text-text/60">
@@ -51,7 +51,7 @@ export default function AboutPage() {
           showAnchorIcon
           as={Link}
           color="primary"
-          href="https://github.com/heroui-inc/heroui"
+          href=""
           variant="solid"
           className="mt-2"
         >

@@ -14,13 +14,13 @@ export const Footer = () => {
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-text">
         {/* Company Info */}
         <div>
-          <h2 className="text-xl font-semibold mb-4">CyberGrow</h2>
+          <h2 className="text-xl font-semibold mb-4">E-Learning</h2>
           <p className="text-sm text-gray-400">
             Empowering learning with high-quality courses and resources.
           </p>
           {/* Copyright */}
           <div className="mt-10 text-xs sm:text-sm text-gray-500">
-            &copy; {new Date().getFullYear()} CyberGrow. All rights reserved.
+            &copy; {new Date().getFullYear()} E-Learning. All rights reserved.
           </div>
         </div>
 
@@ -111,7 +111,7 @@ export const Footer = () => {
       {/* Gradient Footer Text */}
       <div className="text-center mt-10 flex flex-col items-center">
         <span className="bg-gradient-to-b from-background to-border-color bg-clip-text text-transparent text-[2.5rem] sm:text-[4rem] md:text-[6rem] lg:text-[8rem] xl:text-[9.5rem] font-bold leading-none">
-          CYBERGROW
+          E-Learning
         </span>
         <span className="text-gray-500 text-lg tracking-widest">
           Powered by CodeBit
