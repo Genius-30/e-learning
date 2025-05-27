@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Payment Failed - CyberGrow</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        font-family: Arial, sans-serif;
+        color: #333;
+      }
+
+      .container {
+        max-width: 480px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .logo {
+        width: 150px;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        color: #cd0003;
+      }
+
+      .message {
+        font-size: 16px;
+        color: #555;
+        margin: 10px 0 20px 0;
+      }
+
+      .course-name {
+        font-size: 20px;
+        font-weight: bold;
+        color: #b1001f;
+        margin: 10px 0;
+      }
+
+      .reason {
+        font-size: 14px;
+        color: #888;
+        margin-bottom: 20px;
+      }
+
+      .button {
+        display: inline-block;
+        padding: 12px 24px;
+        background-color: #cd0003;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+
+      .footer {
+        margin-top: 30px;
+        font-size: 12px;
+        color: #777;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body,
+        html {
+          background-color: #181818;
+          color: #f9f9f9;
+        }
+
+        .container {
+          background-color: #252525;
+          color: #ffffff;
+        }
+
+        .course-name {
+          color: #ff4d4d;
+        }
+
+        .button {
+          background-color: #ff4d4d;
+        }
+
+        .message,
+        .footer {
+          color: #bbb;
+        }
+
+        .reason {
+          color: #aaa;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrlwIQHkDH8nrvMLcP5UgRmNcATcVVxjNk-g&s"
+        alt="CyberGrow Technology"
+        class="logo"
+      />
+
+      <h2>Payment Failed</h2>
+
+      <p>Hello <b>{{name}}</b>,</p>
+      <p class="message">
+        Unfortunately, your payment for the course below was not successful:
+      </p>
+
+      <div class="course-name">{{courseName}}</div>
+
+      <p class="reason"><i>Reason:</i> {{failureReason}}</p>
+
+      <a href="{{courseLink}}" class="button" target="_blank">Try Again</a>
+
+      <p class="message" style="margin-top: 20px">
+        Need help? Contact our support team for assistance.
+      </p>
+
+      <div class="footer">
+        &copy; 2025 CyberGrow Technology. All rights reserved.
+      </div>
+    </div>
+  </body>
+</html>

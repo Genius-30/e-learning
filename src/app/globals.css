@@ -1,0 +1,49 @@
+@import "tailwindcss";
+@plugin './hero.js';
+@source '../../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
+@source '../../src/**/*.{js,ts,jsx,tsx}';
+@custom-variant dark (&:is(.dark *));
+
+/* @config "../../tailwind.config.js"; */
+/* @plugin 'tailwindcss-animate'; */
+
+/* Define custom colors using Tailwind CSS 4.0 variables */
+@theme {
+  /* Light mode variables */
+  --color-background: var(--color-white);
+  --color-text: var(--color-zinc-900);
+  --color-primary: var(--color-red-800);
+  --color-secondary: var(--color-red-700);
+  --color-blue: #006fee;
+  --color-accent: linear-gradient(
+    135deg,
+    var(--color-red-700),
+    var(--color-red-800)
+  );
+  --color-hover: var(--color-zinc-200);
+  --color-border: oklch(0.922 0 0);
+
+  --color-border-color: var(--color-zinc-600);
+  --border-color-card: var(--color-zinc-300);
+  --border-color-primary: var(--color-red-800);
+  /* Primary border */
+  --border-color-secondary: var(--color-red-700);
+  /* Secondary border */
+
+  --breakpoint-xs: 30rem;
+}
+
+/* Dark mode */
+.dark {
+  --color-background: var(--color-zinc-900);
+  --color-text: var(--color-zinc-50);
+  --color-border-color: var(--color-zinc-200);
+  --color-border: oklch(1 0 0 / 10%);
+  --color-hover: var(--color-zinc-600);
+  --border-color-card: var(--color-zinc-700);
+}
+
+/* Apply custom colors using Tailwind's variable system */
+body {
+  font-family: var(--font-inter);
+}

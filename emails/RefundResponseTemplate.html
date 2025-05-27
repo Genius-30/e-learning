@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Refund Request Update</title>
+    <style>
+      /* General styles */
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        font-family: Arial, sans-serif;
+        color: #333;
+      }
+
+      .container {
+        max-width: 480px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .logo {
+        width: 150px;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        color: #cd0003;
+      }
+
+      .status {
+        font-size: 18px;
+        font-weight: bold;
+        padding: 10px 20px;
+        display: inline-block;
+        border-radius: 5px;
+        margin: 10px 0;
+        text-transform: uppercase;
+      }
+
+      .approved {
+        background: #d4edda;
+        color: #155724;
+      }
+
+      .rejected {
+        background: #f8d7da;
+        color: #721c24;
+      }
+
+      .message {
+        font-size: 14px;
+        color: #555;
+      }
+
+      .admin-response {
+        background: #f8f8f8;
+        padding: 15px;
+        border-radius: 8px;
+        font-size: 14px;
+        color: #444;
+        margin-top: 10px;
+        text-align: left;
+        border-left: 4px solid #cd0003;
+      }
+
+      .footer {
+        margin-top: 20px;
+        font-size: 12px;
+        color: #777;
+      }
+
+      /* Dark mode styles */
+      @media (prefers-color-scheme: dark) {
+        body,
+        html {
+          background-color: #181818;
+          color: #f9f9f9;
+        }
+
+        .container {
+          background-color: #252525;
+          color: #ffffff;
+        }
+
+        .status {
+          background: #333;
+          color: #ff4d4d;
+        }
+
+        .message,
+        .footer {
+          color: #bbb;
+        }
+
+        .admin-response {
+          background: #333;
+          color: #eee;
+          border-left: 4px solid #ff4d4d;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrlwIQHkDH8nrvMLcP5UgRmNcATcVVxjNk-g&s"
+        alt="CyberGrow Technology"
+        class="logo"
+      />
+
+      <h2>Refund Request Update</h2>
+
+      <p>Hello <b>{{name}}</b>,</p>
+      <p>Your refund request has been:</p>
+
+      <div class="status {{statusClass}}">{{status}}</div>
+
+      {{#if adminResponse}}
+      <div class="admin-response">
+        <strong>Admin Response:</strong>
+        <p>{{adminResponse}}</p>
+      </div>
+      {{/if}}
+
+      <p class="message">
+        If you have any questions, feel free to contact our support team.
+      </p>
+
+      <div class="footer">
+        &copy; 2025 CyberGrow Technology. All rights reserved.
+      </div>
+    </div>
+  </body>
+</html>
