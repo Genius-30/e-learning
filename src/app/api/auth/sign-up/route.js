@@ -34,12 +34,12 @@ export async function POST(req) {
         return ErrorResponse("User already exists");
       }
 
-      // Prevent multiple OTP requests within validity period
-      if (existingUser.otp && existingUser.otpExpiry > new Date()) {
-        return ErrorResponse(
-          "OTP already sent. Please wait before requesting a new one."
-        );
-      }
+      // // Prevent multiple OTP requests within validity period
+      // if (existingUser.otp && existingUser.otpExpiry > new Date()) {
+      //   return ErrorResponse(
+      //     "OTP already sent. Please wait before requesting a new one."
+      //   );
+      // }
 
       // Update the user details
       existingUser.name = name;
@@ -55,7 +55,6 @@ export async function POST(req) {
         email: normalizedEmail,
         password,
         isEmailVerified: false,
-        isTwoFactorEnabled: false,
       });
 
       await user.setOtp(otp);
