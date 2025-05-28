@@ -22,12 +22,12 @@ export async function POST(req) {
       return ErrorResponse("User not found", 404);
     }
 
-    // Prevent multiple OTP requests within validity period
-    if (fetchedUser.otp && fetchedUser.otpExpiry > new Date()) {
-      return ErrorResponse(
-        "OTP already sent. Please wait before requesting a new one."
-      );
-    }
+    // // Prevent multiple OTP requests within validity period
+    // if (fetchedUser.otp && fetchedUser.otpExpiry > new Date()) {
+    //   return ErrorResponse(
+    //     "OTP already sent. Please wait before requesting a new one."
+    //   );
+    // }
 
     // Generate OTP and set the expiry to 5 minutes
     const otp = crypto.randomInt(100000, 999999).toString();
@@ -40,7 +40,7 @@ export async function POST(req) {
     const emailResponse = await sendEmail({
       email: fetchedUser.email,
       subject: "Here's the verification code for your account",
-      templateName: "VerificationTemplate", // Stored in `emails/VerificationTemplate.html`
+      templateName: "VerificationTemplate",
       placeholders: {
         name: fetchedUser.name,
         otp: otp,
