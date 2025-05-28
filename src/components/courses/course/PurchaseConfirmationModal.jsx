@@ -76,7 +76,7 @@ export default function PurchaseConfirmationModal({
         key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID,
         amount: amount,
         currency: "INR",
-        name: "CyberGrow Technology",
+        name: "Genius Learning",
         image: "/logo.jpg",
         description: `Purchase ${selectedPurchaseType} access to ${courseData.title}`,
         order_id: orderId,
@@ -112,7 +112,7 @@ export default function PurchaseConfirmationModal({
           purchaseType: selectedPurchaseType,
         },
         theme: {
-          color: "#9f0712", // your brand color
+          color: "#9f0712",
         },
       };
 
