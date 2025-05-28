@@ -39,11 +39,11 @@ export async function PATCH(req, { params }) {
         email: user.email,
         actionTitle: `Account ${user.isActive ? "Reactivated" : "Deactivated"}`,
         statusContent: user.isActive
-      ? `<p>Your account has been <b>reactivated</b> by the admin. You can now log in using your existing credentials.</p>
+          ? `<p>Your account has been <b>reactivated</b> by the admin. You can now log in using your existing credentials.</p>
          <div class="details">
            <p><b>Email:</b> <span class="highlight">${user.email}</span></p>
          </div>`
-      : `<p>Your account has been <b>deactivated</b> by the admin. You can no longer access your account.</p>`,
+          : `<p>Your account has been <b>deactivated</b> by the admin. You can no longer access your account.</p>`,
       },
     });
 

@@ -1,7 +1,7 @@
 import nodemailer from "nodemailer";
 import fs from "fs";
 import path from "path";
-import { fileURLToPath } from "url";
+import process from "process";
 
 const transporter = nodemailer.createTransport({
   host: process.env.EMAIL_HOST,
@@ -13,14 +13,11 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
 // Function to get email template content
 const getEmailTemplate = (templateName) => {
   const templatePath = path.join(
-    __dirname,
-    `../../emails/${templateName}.html`
+    process.cwd(),
+    `public/emails/${templateName}.html`
   );
   try {
     return fs.readFileSync(templatePath, "utf8");
@@ -56,6 +53,8 @@ const sendEmail = async ({ email, subject, templateName, placeholders }) => {
       subject: subject,
       html: emailContent,
     });
+
+    console.log(info);
 
     return { success: true, messageId: info.messageId };
   } catch (error) {
