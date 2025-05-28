@@ -51,7 +51,7 @@ const sendEmail = async ({ email, subject, templateName, placeholders }) => {
     const emailContent = replacePlaceholders(emailTemplate, placeholders);
 
     const info = await transporter.sendMail({
-      from: `CyberGrow Technology <${process.env.EMAIL_USER}>`,
+      from: `Genius Learning <${process.env.EMAIL_USER}>`,
       to: email,
       subject: subject,
       html: emailContent,
