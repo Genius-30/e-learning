@@ -48,7 +48,9 @@ export default function TrustedCompaniesSection() {
                   alt={alt}
                   width={400}
                   height={400}
-                  className="h-[70px] md:h-[100px] w-auto object-cover grayscale-100 hover:scale-105 transition-transform duration-300 ease-in-out"
+                  className={`h-[70px] md:h-[100px] w-auto object-cover grayscale-100 hover:scale-105 transition-transform duration-300 ease-in-out ${
+                    alt == "MSME Logo" ? "invert" : ""
+                  }`}
                 />
               ))}
             </React.Fragment>

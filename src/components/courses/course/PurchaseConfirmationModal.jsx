@@ -112,7 +112,7 @@ export default function PurchaseConfirmationModal({
           purchaseType: selectedPurchaseType,
         },
         theme: {
-          color: "#9f0712",
+          color: "#006fee",
         },
       };
 
